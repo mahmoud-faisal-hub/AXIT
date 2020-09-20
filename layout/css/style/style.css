@@ -1,0 +1,185 @@
+/* Start Global */
+body {
+  height: 10000px;
+  background-color: #cccccc;
+}
+
+.text-alpha {
+  color: #ff8b38;
+}
+
+.bg-alpha {
+  background-color: #ff8b38;
+}
+
+p {
+  color: #cccccc;
+  font-size: 18px;
+}
+
+/* End Global */
+/* Start Navbar */
+nav.navbar {
+  background-color: #000000;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 30px;
+}
+
+nav.navbar .collapse ul.navbar-nav li {
+  padding: 10px 13px;
+}
+
+nav.navbar .collapse ul.navbar-nav li a {
+  color: #ffffff;
+}
+
+nav.navbar .collapse ul.navbar-nav li.active a {
+  color: #ff8b38;
+}
+
+/* End Navbar */
+/* Start Header Section */
+section.header {
+  background-image: url("../../../images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 933px;
+}
+
+section.header .intro h1 {
+  font-size: 70px;
+}
+
+section.header .intro h2 {
+  font-size: 40px;
+}
+
+section.header .intro hr {
+  border-top: 3px solid #ffffff;
+  width: 70px;
+  margin: 2rem 0rem;
+}
+
+section.header .intro button {
+  border-width: 2px;
+  padding: 7px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+section.header .intro button:hover {
+  color: #ffffff;
+  background-color: #ff8b38;
+  border-color: #ff8b38;
+}
+
+section.header .sign-up {
+  border: 0;
+}
+
+section.header .sign-up .card-header {
+  background-color: #f5f5f5;
+  color: #000000;
+  border: none;
+}
+
+section.header .sign-up .card-header h5 {
+  color: #595959;
+}
+
+section.header .sign-up .card-body {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+section.header .sign-up .card-body form {
+  margin-top: 25px;
+  width: 100%;
+}
+
+section.header .sign-up .card-body form .form-group {
+  margin-bottom: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.header .sign-up .card-body form .form-group input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+section.header .sign-up .card-body form .form-group input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cccccc;
+  opacity: 1;
+  /* Firefox */
+}
+
+section.header .sign-up .card-body form .form-group input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cccccc;
+  opacity: 1;
+  /* Firefox */
+}
+
+section.header .sign-up .card-body form .form-group input::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cccccc;
+  opacity: 1;
+  /* Firefox */
+}
+
+section.header .sign-up .card-body form .form-group input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cccccc;
+  opacity: 1;
+  /* Firefox */
+}
+
+section.header .sign-up .card-body form .form-group input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cccccc;
+}
+
+section.header .sign-up .card-body form .form-group input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #cccccc;
+}
+
+section.header .sign-up .card-body form button {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  margin-top: 20px;
+  padding: 13px 0;
+  background-color: #ff9b51;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+section.header .sign-up .card-body form button:hover {
+  background-color: #ff8b38;
+}
+
+/* End Header Section */

@@ -1,0 +1,187 @@
+/* Start Global */
+
+// Global Color Variables
+$color-alpha: #ff8b38;
+$color-beta: #ff9b51;
+$color-gamma: #333333;
+$color-delta: #f5f5f5;
+$color-epsilon: #cccccc;
+$color-zeta: #ffffff;
+$color-eta: #000000;
+
+// Minins
+@mixin transition($time: 00.3) {
+    transition: $time + s ease-in-out;
+    -webkit-transition: $time + s ease-in-out;
+    -moz-transition: $time + s ease-in-out;
+    -ms-transition: $time + s ease-in-out;
+    -o-transition: $time + s ease-in-out;
+}
+
+// Global Elements
+body {
+    height: 10000px;
+    background-color: $color-epsilon;
+}
+
+.text-alpha {
+    color: $color-alpha;
+}
+
+.bg-alpha {
+    background-color: $color-alpha;
+}
+
+p {
+    color: $color-epsilon;
+    font-size: 18px;
+}
+
+/* End Global */
+
+/* Start Navbar */
+
+nav.navbar {
+    background-color: $color-eta;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .collapse {
+        ul.navbar-nav {
+            li {
+                padding: 10px 13px;
+
+                a {
+                    color: $color-zeta;
+                }
+
+                &.active a {
+                    color: $color-alpha;
+                }
+            }
+        }
+    }
+}
+
+/* End Navbar */
+
+/* Start Header Section */
+
+section.header {
+    background-image: url("../../../images/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 933px;
+
+    .intro {
+        h1 {
+            font-size: 70px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        hr {
+            border-top: 3px solid $color-zeta;
+            width: 70px;
+            margin: 2rem 0rem;
+        }
+
+        button {
+            border-width: 2px;
+            padding: 7px;
+            @include transition();
+
+            &:hover {
+                color: $color-zeta;
+                background-color: $color-alpha;
+                border-color: $color-alpha;
+            }
+        }
+    }
+
+    .sign-up {
+        border: 0;
+
+        .card-header {
+            background-color: $color-delta;
+            color: $color-eta;
+            border: none;
+
+            h5 {
+                color: #595959;
+            }
+        }
+
+        .card-body {
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+
+            form {
+                margin-top: 25px;
+                width: 100%;
+
+                .form-group{
+                    margin-bottom: 30px;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    input {
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 1px solid #ced4da;
+                        border-radius: 0;
+                        
+
+                        &::placeholder {
+                            /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: $color-epsilon;
+                            opacity: 1; /* Firefox */
+                        }
+
+                        &:-ms-input-placeholder {
+                            /* Internet Explorer 10-11 */
+                            color: $color-epsilon;
+                        }
+
+                        &::-ms-input-placeholder {
+                            /* Microsoft Edge */
+                            color: $color-epsilon;
+                        }
+                    }
+
+                }
+
+                button {
+                    width: 100%;
+                    border: 0;
+                    border-radius: 0;
+                    border-bottom-right-radius: 0.2rem;
+                    border-bottom-left-radius: 0.2rem;
+                    margin-top: 20px;
+                    padding: 13px 0;
+                    background-color: $color-beta;
+                    @include transition();
+
+                    &:hover {
+                        background-color: $color-alpha;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Header Section */
