@@ -13,8 +13,20 @@ body {
 }
 
 p {
-  color: #cccccc;
-  font-size: 18px;
+  color: #B5B5B5;
+  font-size: 15px;
+}
+
+h5,
+h6 {
+  color: #4C4C4C;
+  font-weight: bold;
+}
+
+.btn-main {
+  background-color: #ff8b38;
+  padding: 8px 1.5rem;
+  color: #f8f9fa;
 }
 
 /* End Global */
@@ -67,6 +79,10 @@ section.header .intro hr {
   border-top: 3px solid #ffffff;
   width: 70px;
   margin: 2rem 0rem;
+}
+
+section.header .intro p {
+  font-size: 18px;
 }
 
 section.header .intro button {
@@ -183,3 +199,101 @@ section.header .sign-up .card-body form button:hover {
 }
 
 /* End Header Section */
+/* Start Brand Bar Section */
+section.brand-bar {
+  -webkit-box-shadow: 0 0.35rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.35rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+section.brand-bar .icons li {
+  display: inline;
+  margin: 0 15px;
+  color: #cccccc;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+section.brand-bar .icons li:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* End Brand Bar Section */
+/* Start Features Section */
+section.features {
+  background-color: #f5f5f5;
+  padding: 150px 0;
+}
+
+section.features .tabs ul {
+  margin-bottom: 0;
+}
+
+section.features .tabs ul li {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  width: 112px;
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  margin-bottom: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+section.features .tabs ul li:first-of-type {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+section.features .tabs ul li:last-of-type {
+  border-radius: 0 0 0.25rem 0.25rem;
+  margin-bottom: 0;
+}
+
+section.features .tabs ul li.active {
+  background-color: #ff8b38;
+}
+
+section.features .tabs ul li:hover:not(.active) {
+  background-color: #000000;
+}
+
+@media (min-width: 992px) {
+  section.features .tab {
+    padding-right: 85px;
+  }
+}
+
+section.features .tab:not(:first-of-type) {
+  display: none;
+}
+
+section.features .tab h5 {
+  margin-bottom: 35px;
+}
+
+section.features .tab p {
+  margin-bottom: 25px;
+}
+
+section.features .tab p:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+/* End Features Section */

@@ -8,8 +8,6 @@ $(function () {
 
         $("section.header").css("margin-top", navHeight);
 
-        console.log(navHeight);
-
     };
 
     test();
@@ -20,5 +18,24 @@ $(function () {
 
     });
     
+    // Features Tab System
+
+    $(".features .tabs ul li").on("click", function() {
+
+        var tab = $("#" + $(this).data("target"));
+        $(this).addClass("active").siblings().removeClass("active");
+        $(tab).siblings().animate({
+            opacity: "0",
+        }, function() {
+
+            $(this).css({
+                "display": "none",
+                "opacity": "1"
+            });
+            $(tab).fadeIn();
+
+        });
+
+    });
 
 });
