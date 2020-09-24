@@ -49,6 +49,15 @@ h6 {
     color: #f8f9fa;
 }
 
+hr {
+    border-top: 4px solid $color-alpha;
+    width: 70px;
+}
+
+i {
+    color: $color-alpha;
+}
+
 /* End Global */
 
 /* Start Navbar */
@@ -212,9 +221,13 @@ section.brand-bar {
             display: inline;
             margin: 0 15px;
             color: $color-epsilon;
-            @include transition();
 
-            &:hover {
+            i {
+                color: $color-epsilon;
+                @include transition();
+            }
+
+            &:hover i {
                 color: $color-eta;
                 cursor: pointer;
             }
@@ -227,65 +240,102 @@ section.brand-bar {
 /* Start Features Section */
 
 section.features {
-    background-color: $color-delta;
-    padding: 150px 0;
+    .section-1 {
+        background-color: $color-delta;
+        padding: 150px 0;
 
-    .tabs {
-        ul {
-            margin-bottom: 0;
+        .tabs {
+            ul {
+                margin-bottom: 0;
 
-            li {
-                background-color: $color-gamma;
-                color: $color-zeta;
-                text-align: center;
-                width: 112px;
-                height: 112px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                margin-bottom: 1px;
-                cursor: pointer;
-                @include transition();
+                li {
+                    background-color: $color-gamma;
+                    color: $color-zeta;
+                    text-align: center;
+                    width: 112px;
+                    height: 112px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    margin-bottom: 1px;
+                    cursor: pointer;
+                    @include transition();
 
-                &:first-of-type {
-                    border-radius: 0.25rem 0.25rem 0 0;
+                    &:first-of-type {
+                        border-radius: 0.25rem 0.25rem 0 0;
+                    }
+
+                    &:last-of-type {
+                        border-radius: 0 0 0.25rem 0.25rem;
+                        margin-bottom: 0;
+                    }
+                    
+                    &.active {
+                        background-color: $color-alpha;
+                    }
+                    
+                    &:hover:not(.active) {
+                        background-color: $color-eta;
+                    }
                 }
+            }
+        }
+
+        .tab {
+            @media (min-width: 992px) {
+                padding-right: 85px;
+            }
+
+            &:not(:first-of-type) {
+                display: none;
+            }
+
+            h5 {
+                margin-bottom: 35px;
+            }
+
+            p {
+                margin-bottom: 25px;
 
                 &:last-of-type {
-                    border-radius: 0 0 0.25rem 0.25rem;
-                    margin-bottom: 0;
-                }
-                
-                &.active {
-                    background-color: $color-alpha;
-                }
-                
-                &:hover:not(.active) {
-                    background-color: $color-eta;
+                    margin-bottom: 2.5rem;
                 }
             }
         }
     }
 
-    .tab {
-        @media (min-width: 992px) {
-            padding-right: 85px;
+    .section-2 {
+        background-color: $color-zeta;
+        padding: 150px 0;
+
+        .image{
+            img {
+                box-shadow: 0 1rem 3rem rgba(0,0,0,0.5)!important;
+            }
         }
 
-        &:not(:first-of-type) {
-            display: none;
+        .content {
+            .sub-list {
+                .list-icon {
+                    i {
+                        font-size: 20px;
+                        border: 3px solid $color-alpha;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
+    }
 
-        h5 {
-            margin-bottom: 35px;
-        }
+    .section-3 {
+        background-color: $color-delta;
+        padding: 150px 0;
 
-        p {
-            margin-bottom: 25px;
-
-            &:last-of-type {
-                margin-bottom: 2.5rem;
+        .image{
+            img {
+                box-shadow: 0 1rem 3rem rgba(0,0,0,0.5)!important;
             }
         }
     }
