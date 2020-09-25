@@ -337,3 +337,41 @@ section.features .section-3 .image img {
 }
 
 /* End Features Section */
+/* Start Our Process Section */
+section.our-process {
+  background-color: #ffffff;
+  padding: 150px 0;
+}
+
+section.our-process .header h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+section.our-process .header hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section.our-process .content i {
+  font-size: 35px;
+  border: 3px solid #ff8b38;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+section.our-process .content h5 {
+  margin: 20px 0;
+}
+
+/* Start Our Process Section */
