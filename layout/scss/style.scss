@@ -37,6 +37,10 @@ p {
     font-size: 15px;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 h5,
 h6 {
     color: #4C4C4C;
@@ -560,3 +564,57 @@ section.custom {
 }
 
 /* End Custom Section */
+
+/* Start Contact Section */
+
+section.contact {
+    background-color: $color-zeta;
+    padding: 150px 0;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    hr {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        width: 100%;
+
+        .form-row {
+            input, textarea {
+                border-radius: 0;
+                margin-bottom: 20px;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid #ced4da;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: $color-epsilon;
+                    opacity: 1; /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: $color-epsilon;
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: $color-epsilon;
+                }
+            }
+
+            textarea {
+                height: 154px;
+                resize: none;
+            }
+        }
+    }
+}
+
+/* End Contact Section */
