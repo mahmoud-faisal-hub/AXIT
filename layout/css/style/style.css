@@ -455,3 +455,58 @@ section.pricing .plans .card .card-details-list {
 }
 
 /* End Pricing Section */
+/* Start Testimonials Section */
+section.testimonials {
+  background-color: #ffffff;
+  padding: 150px 0;
+}
+
+section.testimonials .header h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+section.testimonials .header hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section.testimonials .comments div.mb-5:last-child {
+  margin-bottom: 0 !important;
+}
+
+section.testimonials .comments div.mb-5 .comment {
+  background: #f5f5f5;
+  padding: 20px 15px;
+  border-radius: 0.25rem;
+  margin-bottom: 0;
+}
+
+section.testimonials .comments div.mb-5 .comment p {
+  margin: 0;
+}
+
+section.testimonials .comments div.mb-5 .comment::after {
+  content: "";
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid #f5f5f5;
+  left: 40px;
+  bottom: 67px;
+}
+
+section.testimonials .comments div.mb-5 .user {
+  margin-top: 16px;
+}
+
+section.testimonials .comments div.mb-5 .user img {
+  width: 75px;
+  height: 75px;
+}
+
+section.testimonials .comments div.mb-5 .user small {
+  color: #b7b7b7;
+}
+
+/* End Testimonials Section */
