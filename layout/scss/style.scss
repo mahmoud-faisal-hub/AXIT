@@ -258,7 +258,7 @@ section.features {
                     justify-content: center;
                     align-items: center;
                     font-weight: bold;
-                    margin-bottom: 1px;
+                    margin-bottom: 1.5px;
                     cursor: pointer;
                     @include transition();
 
@@ -358,10 +358,6 @@ section.our-process {
             margin-top: 1.5rem;
             margin-bottom: 1.5rem;
         }
-        
-        // p {
-        //     margin-bottom: 50px;
-        // }
     }
 
     .content {
@@ -385,3 +381,85 @@ section.our-process {
 }
 
 /* Start Our Process Section */
+
+/* Start Pricing Section */
+
+section.pricing {
+    background-color: $color-delta;
+    padding: 150px 0;
+
+    .header {
+        h1 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        hr {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .plans {
+        align-items: flex-end;
+        margin-top: 50px;
+
+        & > div:not(:last-child) {
+            @media (max-width: 991px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .card {
+            border: none;
+            border-radius: 0;
+            margin: 0 10px;
+
+            .card-header {
+                background-color: $color-gamma;
+                border-radius: 0;
+                border-bottom: 1px solid $color-delta;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .card-price {
+                background-color: $color-gamma;
+                font-size: 25px;
+                font-weight: bold;
+
+                .price {
+                    font-size: 65px;
+                    font-family: 'Zilla Slab', serif;
+                }
+
+                .quote {
+                    display: block;
+                    color: #cccccc;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: lighter;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .card-tip{
+                background-color: $color-alpha;
+                min-height: 5px;
+                text-transform: uppercase;
+
+                .tip {
+                    padding: 10px 0;
+                    color: $color-zeta;
+                    margin-bottom: 0;
+                }
+            }
+
+            .card-details-list {
+                color: #b7b7b7;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/* End Pricing Section */

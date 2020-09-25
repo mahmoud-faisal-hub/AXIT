@@ -261,7 +261,7 @@ section.features .section-1 .tabs ul li {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  margin-bottom: 1px;
+  margin-bottom: 1.5px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -375,3 +375,83 @@ section.our-process .content h5 {
 }
 
 /* Start Our Process Section */
+/* Start Pricing Section */
+section.pricing {
+  background-color: #f5f5f5;
+  padding: 150px 0;
+}
+
+section.pricing .header h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+section.pricing .header hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section.pricing .plans {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  section.pricing .plans > div:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+section.pricing .plans .card {
+  border: none;
+  border-radius: 0;
+  margin: 0 10px;
+}
+
+section.pricing .plans .card .card-header {
+  background-color: #333333;
+  border-radius: 0;
+  border-bottom: 1px solid #f5f5f5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section.pricing .plans .card .card-price {
+  background-color: #333333;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section.pricing .plans .card .card-price .price {
+  font-size: 65px;
+  font-family: 'Zilla Slab', serif;
+}
+
+section.pricing .plans .card .card-price .quote {
+  display: block;
+  color: #cccccc;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+section.pricing .plans .card .card-tip {
+  background-color: #ff8b38;
+  min-height: 5px;
+  text-transform: uppercase;
+}
+
+section.pricing .plans .card .card-tip .tip {
+  padding: 10px 0;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+section.pricing .plans .card .card-details-list {
+  color: #b7b7b7;
+  text-transform: uppercase;
+}
+
+/* End Pricing Section */
