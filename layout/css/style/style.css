@@ -1,9 +1,4 @@
 /* Start Global */
-body {
-  height: 10000px;
-  background-color: #cccccc;
-}
-
 .text-alpha {
   color: #ff8b38;
 }
@@ -622,3 +617,34 @@ section.contact form .form-row textarea {
 }
 
 /* End Contact Section */
+/* Start Footer Section */
+footer {
+  background-color: #000000;
+  padding: 50px 0;
+  color: #A8A8A8;
+}
+
+footer ul {
+  font-size: 13px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+footer ul li i {
+  color: #A8A8A8;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+footer ul li i:hover {
+  color: #ffffff;
+}
+
+/* End Footer Section */

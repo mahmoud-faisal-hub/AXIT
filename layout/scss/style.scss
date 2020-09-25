@@ -19,10 +19,10 @@ $color-eta: #000000;
 }
 
 // Global Elements
-body {
-    height: 10000px;
-    background-color: $color-epsilon;
-}
+// body {
+//     height: 10000px;
+//     background-color: $color-epsilon;
+// }
 
 .text-alpha {
     color: $color-alpha;
@@ -618,3 +618,32 @@ section.contact {
 }
 
 /* End Contact Section */
+
+/* Start Footer Section */
+
+footer {
+    background-color: $color-eta;
+    padding: 50px 0;
+    color: #A8A8A8;
+
+    ul {
+        font-size: 13px;
+
+        li {
+            display: inline;
+            margin: 0 15px;
+            cursor: pointer;
+
+            i {
+                color: #A8A8A8;
+                @include transition();
+
+                &:hover {
+                    color: $color-zeta;
+                }
+            }
+        }
+    }
+}
+
+/* End Footer Section */
