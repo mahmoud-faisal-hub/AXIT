@@ -510,3 +510,39 @@ section.testimonials .comments div.mb-5 .user small {
 }
 
 /* End Testimonials Section */
+/* Start Custom Section */
+section.custom {
+  background-image: url("../../../images/u25_state0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 320px;
+}
+
+section.custom h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+section.custom hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 4px solid #ffffff;
+}
+
+section.custom button {
+  border-width: 2px;
+  padding: 7px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+section.custom button:hover {
+  color: #ffffff;
+  background-color: #ff8b38;
+  border-color: #ff8b38;
+}
+
+/* End Custom Section */

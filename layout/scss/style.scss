@@ -526,3 +526,37 @@ section.testimonials {
 }
 
 /* End Testimonials Section */
+
+/* Start Custom Section */
+
+section.custom {
+    background-image: url("../../../images/u25_state0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    hr {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-top: 4px solid $color-zeta;
+    }
+
+    button {
+        border-width: 2px;
+        padding: 7px;
+        @include transition();
+
+        &:hover {
+            color: #ffffff;
+            background-color: $color-alpha;
+            border-color: $color-alpha;
+        }
+    }
+}
+
+/* End Custom Section */
